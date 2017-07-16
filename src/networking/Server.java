@@ -8,6 +8,8 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
+import javax.swing.JOptionPane;
+
 public class Server {
 	private int port;
 
@@ -34,6 +36,7 @@ public class Server {
 			os.flush();
 
 			while (connection.isConnected()) {
+				JOptionPane.showMessageDialog(null, is.readObject());
 				System.out.println(is.readObject());
 			}
 

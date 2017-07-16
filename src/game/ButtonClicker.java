@@ -9,6 +9,7 @@ import networking.Server;
 
 public class ButtonClicker extends JFrame {
 	JButton button = new JButton("CLICK");
+	
 	Server server;
 	Client client;
 	
